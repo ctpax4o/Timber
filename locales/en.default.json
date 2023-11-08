@@ -79,33 +79,33 @@
   "collections": {
     "general": {
       "all_of_collection": "All {{ collection }}",
-      "no_matches": "Sorry, there are no products in this collection",
-      "link_title": "Browse our {{ title }} collection",
-      "grid_view": "Grid view",
-      "list_view": "List view",
+      "no_matches": "Съжаляваме, няма продукти в колекцията",
+      "link_title": "Вижте нашата {{ title }} колекция",
+      "grid_view": "Grid изложение",
+      "list_view": "List изложение",
       "items_with_count": {
-        "one": "{{ count }} item",
-        "other": "{{ count }} items"
+        "one": "{{ count }} артикул",
+        "other": "{{ count }} артикул"
       }
     },
     "sidebar": {
-      "tags": "Tags"
+      "tags": "Етикет"
     },
     "sorting": {
-      "title": "Sort by",
-      "featured": "Featured",
-      "best_selling": "Best Selling",
-      "az": "Alphabetically, A-Z",
-      "za": "Alphabetically, Z-A",
-      "price_ascending": "Price, low to high",
-      "price_descending": "Price, high to low",
-      "date_descending": "Date, new to old",
-      "date_ascending": "Date, old to new"
+      "title": "Сортиране по",
+      "featured": "Препоръчани",
+      "best_selling": "Най-продавани",
+      "az": "Азбучен ред, A-Z",
+      "za": "Азбучен ред, Z-A",
+      "price_ascending": "Цена, възходящ ред",
+      "price_descending": "Цена, низходящ ред",
+      "date_descending": "Дата, нова към стара",
+      "date_ascending": "Дата, стара към нова"
     },
     "onboarding": {
-      "modal_title": "This page will show all of your store's products",
-      "no_products_html": "There are no products yet, but once you begin adding them they will show up here regardless if they are in a collection.",
-      "add_product": "Add Product"
+      "modal_title": "Тази страница ще покаже всичките артикули на магазина Ви.",
+      "no_products_html": "Все още няма продукти, но като започнете да ги добавяте, ще се появят независимо дали принадлежат към колекция.",
+      "add_product": "Добавете продукт"
     }
   },
   "contact": {
