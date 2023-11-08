@@ -50,7 +50,7 @@
       "a.special-link {display: inline-block; background-color: #ff9900; color: #ffffff; padding: 10px 20px; margin: 10px 0; border-radius: 5px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: background-color 0.3s, transform 0.3s;}",
       "a.special-link:hover,a.special-link:focus {background-color: #e68a00; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);}",
       "a.special-link:active {transform: translateY(1px); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);}",
-      ".wrapper {max-width: 1400px; \/* Increase this value *\/ margin: 0 auto; \/* This centers the wrapper *\/}"
+      ".wrapper {max-width: 1400px; margin: 0 auto; }"
     ]
   }
 }
