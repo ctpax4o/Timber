@@ -226,13 +226,13 @@
       "news_title": "Новини"
     },
     "onboarding": {
-      "modal_title": "Almost there...",
+      "modal_title": "Почти сме готови...",
       "no_products_html": "You have no products in your home page collection. This placeholder will appear until you <a href=\"\/admin\/collections?tutorial=Frontpage\">add a product to this collection<\/a>.",
-      "add_product": "Add a Product",
-      "product_title": "Example Product Title",
+      "add_product": "Добавяне на продукт",
+      "product_title": "Примерно име",
       "no_collections_html": "You don't have any collections to show here. <a href=\"\/admin\/custom_collections\">Add some collections<\/a> to go along with the default home page.",
-      "add_collection": "Add a Collection",
-      "collection_title": "Example Collection Title"
+      "add_collection": "Добавяне на колекция",
+      "collection_title": "Примерно име"
     }
   },
   "layout": {
