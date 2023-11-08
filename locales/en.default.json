@@ -55,25 +55,25 @@
   },
   "cart": {
     "general": {
-      "title": "Shopping Cart",
-      "remove": "Remove",
-      "note": "Special instructions for seller",
-      "subtotal": "Subtotal",
-      "shipping_at_checkout": "Shipping & taxes calculated at checkout",
-      "update": "Update Cart",
-      "checkout": "Check Out",
-      "empty": "Your cart is currently empty.",
+      "title": "Количка",
+      "remove": "Премахване",
+      "note": "Специални инструкции към продавача",
+      "subtotal": "Общо",
+      "shipping_at_checkout": "Доставката и таксите ще бъдат начислени при стъпката на плащането.",
+      "update": "Обновете количката",
+      "checkout": "Плащане",
+      "empty": "Количката Ви е празна",
       "continue_browsing_html": "Continue browsing <a href=\"\/collections\/all\">here<\/a>.",
-      "close_cart": "Close Cart",
+      "close_cart": "Затворете количката",
       "savings_html": "You're saving {{ price }}",
-      "reduce_quantity": "Reduce item quantity by one",
-      "increase_quantity": "Increase item quantity by one"
+      "reduce_quantity": "Намалете количеството с една единица",
+      "increase_quantity": "Увеличете количеството с една единица"
     },
     "label": {
-      "product": "Product",
-      "price": "Price",
-      "quantity": "Quantity",
-      "total": "Total"
+      "product": "Продукт",
+      "price": "Цена",
+      "quantity": "Количество",
+      "total": "Общо"
     }
   },
   "collections": {
