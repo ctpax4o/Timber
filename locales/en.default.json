@@ -221,8 +221,8 @@
   },
   "homepage": {
     "sections": {
-      "frontpage_title": "Нашето кафе",
-      "featured_title": "Специални предложения",
+      "frontpage_title": "Специални предложения",
+      "featured_title": "Нашият магазин",
       "news_title": "Новини"
     },
     "onboarding": {
