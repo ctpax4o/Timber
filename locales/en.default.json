@@ -1,8 +1,8 @@
 {
   "general": {
     "meta": {
-      "tags": "Tagged \"{{ tags }}\"",
-      "page": "Page {{ page }}"
+      "tags": "Етикет \"{{ tags }}\"",
+      "page": "Страница {{ page }}"
     },
     "404": {
       "title": "Страницата не беше намерена",
@@ -27,12 +27,12 @@
   },
   "blogs": {
     "article": {
-      "author_on_date_html": "Posted by {{ author }} on {{ date }}",
-      "older_post": "Older Post",
-      "newer_post": "Newer Post",
-      "tags": "Tags",
-      "comment_meta_html": "{{ author }} on {{ date }}",
-      "read_more": "Read more"
+      "author_on_date_html": "Публикувано от: {{ author }} on {{ date }}",
+      "older_post": "Стара публикация",
+      "newer_post": "Нова публикация",
+      "tags": "Етикет",
+      "comment_meta_html": "{{ author }} на {{ date }}",
+      "read_more": "Прочетете още"
     },
     "comments": {
       "title": "Оставете съобщение",
