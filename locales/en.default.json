@@ -63,7 +63,7 @@
       "update": "Обновете количката",
       "checkout": "Плащане",
       "empty": "Количката Ви е празна",
-      "continue_browsing_html": "Обратно към магазина <a href=\"\/collections\/all\">тук<\/a>.",
+      "continue_browsing_html": "<a href=\"\/collections\/all\">Обратно към магазина оттук<\/a>.",
       "close_cart": "Затворете количката",
       "savings_html": "You're saving {{ price }}",
       "reduce_quantity": "Намалете количеството с една единица",
