@@ -65,7 +65,7 @@
       "empty": "Количката Ви е празна",
       "continue_browsing_html": "<a href=\"\/collections\/all\" class=\"special-link\">Към магазина<\/a>",
       "close_cart": "Затворете количката",
-      "savings_html": "You're saving {{ price }}",
+      "savings_html": " Спестявате {{ price }}",
       "reduce_quantity": "Намалете количеството с една единица",
       "increase_quantity": "Увеличете количеството с една единица"
     },
