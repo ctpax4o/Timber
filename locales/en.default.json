@@ -110,12 +110,12 @@
   },
   "contact": {
     "form": {
-      "name": "Name",
+      "name": "Име",
       "email": "Email",
-      "phone": "Phone Number",
-      "message": "Message",
-      "send": "Send",
-      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
+      "phone": "Телефонен номер",
+      "message": "Съобщение",
+      "send": "Изпращане",
+      "post_success": "Благодарим Ви, че се свързахте с нас. Ще Ви отговорим възможно най-скоро."
     }
   },
   "customer": {
