@@ -27,7 +27,7 @@
   },
   "blogs": {
     "article": {
-      "author_on_date_html": "Публикувано от: {{ author }} on {{ date }}",
+      "author_on_date_html": "Публикувано от: {{ author }} на {{ date }}",
       "older_post": "Стара публикация",
       "newer_post": "Нова публикация",
       "tags": "Етикет",
@@ -44,8 +44,8 @@
       "success_moderated": "Коментарът Ви беше приет. Ще бъде публикуван след като бъде разгледан от модератор.",
       "success": "Коментарът Ви беше публикуван успешно. Благодарим Ви!",
       "with_count": {
-        "one": "{{ count }} comment",
-        "other": "{{ count }} comments"
+        "one": "{{ count }} коментар",
+        "other": "{{ count }} коментари"
       }
     },
     "sidebar": {
