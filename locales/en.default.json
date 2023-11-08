@@ -237,30 +237,30 @@
   },
   "layout": {
     "navigation": {
-      "menu": "Menu"
+      "menu": "Меню"
     },
     "drawers": {
-      "browse": "Browse",
-      "close_menu": "Close menu"
+      "browse": "Разглеждане",
+      "close_menu": "Затваряне на меню"
     },
     "cart": {
-      "title": "Cart",
+      "title": "Количка",
       "items_count": {
-        "one": "item",
-        "other": "items"
+        "one": "артикул",
+        "other": "артикул"
       }
     },
     "customer": {
-      "account": "Account",
-      "logged_in_as_html": "Logged in as {{ first_name }}",
-      "log_out": "Log out",
-      "log_in": "Log in",
-      "create_account": "Create account"
+      "account": "Акаунт",
+      "logged_in_as_html": "Записан като {{ first_name }}",
+      "log_out": "Отписване",
+      "log_in": "Влизане",
+      "create_account": "Създаване на акаунт"
     },
     "footer": {
-      "social_title": "Get Connected",
-      "newsletter_title": "Newsletter",
-      "accepted_payments": "Accepted Payments"
+      "social_title": "Свържете се",
+      "newsletter_title": "Вестник",
+      "accepted_payments": "Видове разплащане"
     }
   },
   "products": {
