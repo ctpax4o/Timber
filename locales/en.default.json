@@ -9,13 +9,13 @@
       "subtext_html": "The page you requested does not exist. Click <a href=\"\/collections\/all\">here<\/a> to continue shopping."
     },
     "breadcrumbs": {
-      "home": "Home",
-      "home_link_title": "Back to the home page"
+      "home": "Начало",
+      "home_link_title": "Обратно към началната страница"
     },
     "newsletter_form": {
       "newsletter_email": "email@example.com",
-      "submit": "Subscribe",
-      "confirmation": "Thanks for subscribing"
+      "submit": "Абонирайте се",
+      "confirmation": "Благодарим Ви, че се абонирахте"
     },
     "search": {
       "no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
