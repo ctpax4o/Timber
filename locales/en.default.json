@@ -272,10 +272,10 @@
       "regular_price": "Regular price"
     },
     "product": {
-      "sold_out": "Sold Out",
-      "on_sale": "On Sale",
+      "sold_out": "Разпродадено",
+      "on_sale": "На разпродажба",
       "on_sale_from_html": "<strong>On Sale<\/strong> from {{ price }}",
-      "unavailable": "Unavailable",
+      "unavailable": "Няма налично",
       "compare_at": "Compare at",
       "quantity": "Quantity",
       "add_to_cart": "Add to Cart"
