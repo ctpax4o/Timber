@@ -265,20 +265,20 @@
   },
   "products": {
     "general": {
-      "previous_product_html": "&larr; Previous Product",
-      "next_product_html": "Next Product &rarr;",
-      "from_text_html": "From {{ price }}",
-      "sale_price": "Sale price",
-      "regular_price": "Regular price"
+      "previous_product_html": "&larr; Предишно предложение",
+      "next_product_html": "Следващо предложение &rarr;",
+      "from_text_html": "от {{ price }}",
+      "sale_price": "Цена",
+      "regular_price": "Редовна цена"
     },
     "product": {
       "sold_out": "Разпродадено",
       "on_sale": "На разпродажба",
-      "on_sale_from_html": "<strong>On Sale<\/strong> from {{ price }}",
+      "on_sale_from_html": "<strong> Намалено <\/strong> от {{ price }}",
       "unavailable": "Няма налично",
-      "compare_at": "Compare at",
-      "quantity": "Quantity",
-      "add_to_cart": "Add to Cart"
+      "compare_at": "Сравнете",
+      "quantity": "Количество",
+      "add_to_cart": "Добавете"
     }
   },
   "gift_cards": {
