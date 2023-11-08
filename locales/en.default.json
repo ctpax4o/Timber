@@ -78,7 +78,7 @@
   },
   "collections": {
     "general": {
-      "all_of_collection": "All {{ collection }}",
+      "all_of_collection": "Всички {{ collection }}",
       "no_matches": "Съжаляваме, няма продукти в колекцията",
       "link_title": "Вижте нашата {{ title }} колекция",
       "grid_view": "Grid изложение",
