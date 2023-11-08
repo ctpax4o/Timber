@@ -11,11 +11,11 @@
     "logo_use_image": false,
     "favicon_enable": false,
     "footer_social_enable": true,
-    "footer_newsletter_enable": true,
+    "footer_newsletter_enable": false,
     "cart_notes_enable": true,
     "ajax_cart_method": "drawer",
     "social_twitter_link": "",
-    "social_facebook_link": "https:\/\/www.facebook.com\/profile.php?id=100085626981257",
+    "social_facebook_link": "http:\/\/www.intheflow.coffee\/",
     "content_for_index": [
 
     ]
