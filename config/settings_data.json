@@ -43,10 +43,13 @@
   "platform_customizations": {
     "custom_css": [
       "body {background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0708\/1115\/6748\/files\/bg_450x.jpg?v=1699445874\"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}",
-      ".nav-bar {width: 100%; \/* Ensure the navigation bar takes full width *\/ background-color: #e2b175; \/* Dark brown color, resembling coffee *\/}",
-      ".wrapper {max-width: 1200px; \/* This constrains the content to a maximum width, you may want to change or remove this *\/ margin: 0 auto; \/* This centers the content within the nav-bar *\/}",
-      " \/* Additional CSS for white text in the navigation bar *\/.nav-bar a {color: #ffffff; \/* White color for text *\/ text-decoration: none; \/* No underline on links *\/}",
-      ".nav-bar a:hover {color: #dddddd; \/* Lighter shade for hover effect *\/}"
+      ".nav-bar {width: 100%; background-color: #e2b175;}",
+      ".wrapper {max-width: 1200px; margin: 0 auto;}",
+      " .nav-bar a {color: #ffffff; text-decoration: none; }",
+      ".nav-bar a:hover {color: #dddddd;}",
+      "a.special-link {display: inline-block; background-color: #ff9900; color: #ffffff; padding: 10px 20px; margin: 10px 0; border-radius: 5px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: background-color 0.3s, transform 0.3s;}",
+      "a.special-link:hover,a.special-link:focus {background-color: #e68a00; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);}",
+      "a.special-link:active {transform: translateY(1px); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);}"
     ]
   }
 }
