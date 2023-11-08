@@ -18,11 +18,11 @@
       "confirmation": "Благодарим Ви, че се абонирахте"
     },
     "search": {
-      "no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
-      "results_for_html": "Your search for \"{{ terms }}\" revealed the following:",
-      "title": "Search for products on our site",
-      "placeholder": "Search our store",
-      "submit": "Search"
+      "no_results_html": "Няма намерени резултати.",
+      "results_for_html": "Резултати:",
+      "title": "Търсене на продукти",
+      "placeholder": "Потърсете в магазина ни",
+      "submit": "Търсене"
     }
   },
   "blogs": {
