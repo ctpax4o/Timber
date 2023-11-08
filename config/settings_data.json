@@ -4,7 +4,7 @@
     "color_secondary": "#bbb",
     "color_borders": "#e5e5e5",
     "color_body_bg": "#fff",
-    "color_body_text": "#333333",
+    "color_body_text": "#ffffff",
     "color_footer_bg": "#e2b175",
     "color_footer_text": "#ffffff",
     "color_footer_social_link": "#ffffff",
@@ -43,9 +43,9 @@
   "platform_customizations": {
     "custom_css": [
       "body {background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0708\/1115\/6748\/files\/bg_450x.jpg?v=1699445874\"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}",
-      ".nav-bar {width: 100%; \/* Ensure the navigation bar takes full width *\/ background-color: #E2B175; \/* Dark brown color, resembling coffee *\/}",
+      ".nav-bar {width: 100%; \/* Ensure the navigation bar takes full width *\/ background-color: #e2b175; \/* Dark brown color, resembling coffee *\/}",
       ".wrapper {max-width: 1200px; \/* This constrains the content to a maximum width, you may want to change or remove this *\/ margin: 0 auto; \/* This centers the content within the nav-bar *\/}",
-      "\/* Additional CSS for white text in the navigation bar *\/.nav-bar a {color: #ffffff; \/* White color for text *\/ text-decoration: none; \/* No underline on links *\/}",
+      " \/* Additional CSS for white text in the navigation bar *\/.nav-bar a {color: #ffffff; \/* White color for text *\/ text-decoration: none; \/* No underline on links *\/}",
       ".nav-bar a:hover {color: #dddddd; \/* Lighter shade for hover effect *\/}"
     ]
   }
