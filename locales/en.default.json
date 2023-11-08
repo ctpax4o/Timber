@@ -85,7 +85,7 @@
       "list_view": "List изложение",
       "items_with_count": {
         "one": "{{ count }} артикул",
-        "other": "{{ count }} артикул"
+        "other": "{{ count }} артикулa"
       }
     },
     "sidebar": {
