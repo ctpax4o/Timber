@@ -2264,6 +2264,11 @@ label.error {
     margin-bottom: $gutter;
   }
 }
+@media only screen and (max-width: 749px) { /* This targets screens with a width of 749px or less, which typically covers mobile devices */
+  .grid__item.large--one-quarter {
+    display: none;
+  }
+}
 
 
 /*============================================================================
