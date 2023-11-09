@@ -1102,36 +1102,24 @@ html input[disabled] {
 
 
 
-/* Define your new colors for visibility */
-$colorBtnPrimary: #ff9900; /* Bright orange for high visibility */
-$colorBtnPrimaryText: #ffffff; /* White text for contrast */
-$colorBtnPrimaryHover: darken($colorBtnPrimary, 10%); /* Slightly darker orange on hover */
-$colorBtnPrimaryActive: darken($colorBtnPrimary, 15%); /* Even darker for active state */
-$disabledBorder: #cccccc; /* Light gray for disabled border */
-$disabledGrey: #e0e0e0; /* Light gray for disabled background */
-$colorBtnSecondary: #ff9900; /* Using the same bright orange for secondary buttons */
-$colorBtnSecondaryHover: darken($colorBtnSecondary, 10%);
-$colorBtnSecondaryText: #ffffff;
-$colorBtnSecondaryActive: darken($colorBtnSecondary, 15%);
-
-.btn,
-.rte .btn {
-  /* Primary button overrides */
+ /*================ Set primary button colors - can override later ================*/
   background-color: $colorBtnPrimary;
   color: $colorBtnPrimaryText;
-  border: 1px solid $colorBtnPrimary; /* Add a border of the same color if you want */
+
   &:hover {
     background-color: $colorBtnPrimaryHover;
     color: $colorBtnPrimaryText;
   }
+
   &:active,
   &:focus {
-    background-color: $colorBtnPrimaryActive;
-    color: $colorBtnPrimaryText;
+   background-color: $colorBtnPrimaryActive;
+   color: $colorBtnPrimaryText;
   }
+
   &[disabled],
   &.disabled {
-    cursor: not-allowed; /* Indicates the button is not clickable */
+    cursor: default;
     color: $disabledBorder;
     background-color: $disabledGrey;
   }
@@ -1139,22 +1127,21 @@ $colorBtnSecondaryActive: darken($colorBtnSecondary, 15%);
 
 .btn--secondary,
 .rte .btn--secondary {
-  /* Secondary button overrides */
-  @extend .btn; /* This inherits styles from .btn */
+  @extend .btn;
   background-color: $colorBtnSecondary;
-  color: $colorBtnSecondaryText;
+
   &:hover {
     background-color: $colorBtnSecondaryHover;
     color: $colorBtnSecondaryText;
   }
+
   &:active,
   &:focus {
-    background-color: $colorBtnSecondaryActive;
-    color: $colorBtnSecondaryText;
+   background-color: $colorBtnSecondaryActive;
+   color: $colorBtnSecondaryText;
   }
 }
 
-/* Other button sizes remain the same, you can change if needed */
 .btn--small {
   padding: 4px 5px;
   font-size: em(12px);
@@ -1169,7 +1156,7 @@ $colorBtnSecondaryActive: darken($colorBtnSecondary, 15%);
   width: 100%;
 }
 
-/* No changes for .text-link, assuming it's fine as is */
+/*================ Force an input/button to look like a text link ================*/
 .text-link {
   display: inline;
   border: 0 none;
@@ -2562,5 +2549,5 @@ label.error {
 .ajaxcart-item__price-strikethrough {
   float: right;
 }
-}
+
 {% endif %} // settings.ajax_cart_method
