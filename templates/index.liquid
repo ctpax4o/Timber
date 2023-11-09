@@ -121,19 +121,30 @@
 {% endcomment %}
 <h2>{{ 'homepage.sections.news_title' | t }}</h2>
 
+<style>
+  /* Add this style block to adjust spacing */
+  .article-title {
+    margin-bottom: 5px; /* Adjust as needed */
+  }
+  
+  .article-date {
+    margin-bottom: 15px; /* Adjust as needed */
+  }
+</style>
+
 <div class="grid">
   {% for article in blogs['news'].articles limit:3 %}
 
     <div class="grid__item large--one-third">
 
-      <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-      <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>
+      <h3 class="article-title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+      <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}" class="article-date">{{ article.published_at | date: format: 'month_day_year' }}</time>
 
       <div class="rte">
         {% if article.excerpt.size > 0 %}
-          {{ article.excerpt }}
+          {{ article.excerpt | newline_to_br }}
         {% else %}
-          <p>{{ article.content | strip_html | truncatewords: 20 }}</p>
+          {{ article.content | truncatewords: 20 | newline_to_br }}
         {% endif %}
       </div>
 
@@ -154,4 +165,5 @@
 
   {% endfor %}
 </div>
+
 
