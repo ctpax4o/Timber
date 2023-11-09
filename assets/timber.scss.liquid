@@ -1100,76 +1100,38 @@ html input[disabled] {
   -moz-appearance: none;
   border-radius: $radius;
 
-/* Define your colors and border-radius directly as SCSS variables */
-$colorLink: #3498db; /* Replace with your preferred link color */
-$colorLinkHover: #2980b9; /* Replace with your preferred hover color */
-$radius: 4px; /* Replace with your preferred border-radius */
 
-a,
-.text-link {
-  color: $colorLink !important;
-  text-decoration: none !important;
-  background: transparent !important;
-}
 
-a:hover,
-a:focus {
-  color: $colorLinkHover !important;
-}
-
-button {
-  overflow: visible !important;
-}
-
-button[disabled],
-html input[disabled] {
-  cursor: default !important;
-}
+/* Define your new colors for visibility */
+$colorBtnPrimary: #ff9900; /* Bright orange for high visibility */
+$colorBtnPrimaryText: #ffffff; /* White text for contrast */
+$colorBtnPrimaryHover: darken($colorBtnPrimary, 10%); /* Slightly darker orange on hover */
+$colorBtnPrimaryActive: darken($colorBtnPrimary, 15%); /* Even darker for active state */
+$disabledBorder: #cccccc; /* Light gray for disabled border */
+$disabledGrey: #e0e0e0; /* Light gray for disabled background */
+$colorBtnSecondary: #ff9900; /* Using the same bright orange for secondary buttons */
+$colorBtnSecondaryHover: darken($colorBtnSecondary, 10%);
+$colorBtnSecondaryText: #ffffff;
+$colorBtnSecondaryActive: darken($colorBtnSecondary, 15%);
 
 .btn,
 .rte .btn {
-  display: inline-block !important;
-  padding: 8px 10px !important;
-  margin: 0 !important;
-  line-height: 1.42 !important;
-  font-weight: bold !important;
-  text-decoration: none !important;
-  text-align: center !important;
-  vertical-align: middle !important;
-  white-space: nowrap !important;
-  cursor: pointer !important;
-  border: 1px solid transparent !important;
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-      -ms-user-select: none !important;
-          user-select: none !important;
-  -webkit-appearance: none !important;
-     -moz-appearance: none !important;
-  border-radius: $radius !important;
-}
-
-/* Rest of your styles */
-
-
-
-  /*================ Set primary button colors - can override later ================*/
+  /* Primary button overrides */
   background-color: $colorBtnPrimary;
   color: $colorBtnPrimaryText;
-
+  border: 1px solid $colorBtnPrimary; /* Add a border of the same color if you want */
   &:hover {
     background-color: $colorBtnPrimaryHover;
     color: $colorBtnPrimaryText;
   }
-
   &:active,
   &:focus {
-   background-color: $colorBtnPrimaryActive;
-   color: $colorBtnPrimaryText;
+    background-color: $colorBtnPrimaryActive;
+    color: $colorBtnPrimaryText;
   }
-
   &[disabled],
   &.disabled {
-    cursor: default;
+    cursor: not-allowed; /* Indicates the button is not clickable */
     color: $disabledBorder;
     background-color: $disabledGrey;
   }
@@ -1177,21 +1139,22 @@ html input[disabled] {
 
 .btn--secondary,
 .rte .btn--secondary {
-  @extend .btn;
+  /* Secondary button overrides */
+  @extend .btn; /* This inherits styles from .btn */
   background-color: $colorBtnSecondary;
-
+  color: $colorBtnSecondaryText;
   &:hover {
     background-color: $colorBtnSecondaryHover;
     color: $colorBtnSecondaryText;
   }
-
   &:active,
   &:focus {
-   background-color: $colorBtnSecondaryActive;
-   color: $colorBtnSecondaryText;
+    background-color: $colorBtnSecondaryActive;
+    color: $colorBtnSecondaryText;
   }
 }
 
+/* Other button sizes remain the same, you can change if needed */
 .btn--small {
   padding: 4px 5px;
   font-size: em(12px);
@@ -1206,7 +1169,7 @@ html input[disabled] {
   width: 100%;
 }
 
-/*================ Force an input/button to look like a text link ================*/
+/* No changes for .text-link, assuming it's fine as is */
 .text-link {
   display: inline;
   border: 0 none;
@@ -1214,6 +1177,7 @@ html input[disabled] {
   padding: 0;
   margin: 0;
 }
+
 
 /*============================================================================
   #Lists
