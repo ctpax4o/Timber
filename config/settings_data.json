@@ -43,7 +43,7 @@
   "platform_customizations": {
     "custom_css": [
       "body {background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0708\/1115\/6748\/files\/bg_450x.jpg?v=1699445874\"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}",
-      ".nav-bar {width: 100%; background-color: #e2b175;}",
+      ".nav-bar {width: 100%; background-color: #bfac9b;}",
       ".wrapper {max-width: 1200px; margin: 0 auto;}",
       ".nav-bar a {color: #ffffff; text-decoration: none;}",
       ".nav-bar a:hover {color: #dddddd;}",
