@@ -82,10 +82,11 @@ $colorPrimary: {{ settings.color_primary }};
 $colorSecondary: {{ settings.color_secondary }};
 
 // Button colors
-$colorBtnPrimary: $colorPrimary;
-$colorBtnPrimaryHover: darken($colorBtnPrimary, 10%);
-$colorBtnPrimaryActive: darken($colorBtnPrimaryHover, 10%);
-$colorBtnPrimaryText: #fff;
+$colorBtnPrimary: #ff9900; // Orange background for primary button
+$colorBtnPrimaryHover: darken($colorBtnPrimary, 10%); // Darken by 10% on hover
+$colorBtnPrimaryActive: darken($colorBtnPrimaryHover, 10%); // Darken by another 10% when active
+$colorBtnPrimaryText: #fff; // White text
+
 
 $colorBtnSecondary: $colorSecondary;
 $colorBtnSecondaryHover: darken($colorBtnSecondary, 10%);
