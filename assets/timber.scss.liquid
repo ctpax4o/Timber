@@ -1084,32 +1084,21 @@ html input[disabled] {
 .btn,
 .rte .btn {
   display: inline-block;
-  padding: 10px 20px; // Updated padding for better visibility
+  padding: 8px 10px;
+  width: auto;
   margin: 0;
-  background-color: #007BFF; // Bright blue background color
-  color: white; // White text color
-  font-weight: bold; // Bold font
+  line-height: 1.42;
+  font-weight: bold;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
-  border: none; // No border
-  border-radius: 5px; // Rounded corners
-  text-transform: uppercase; // Uppercase text
-  line-height: 1.42;
+  border: 1px solid transparent;
+  @include user-select(none);
   -webkit-appearance: none;
   -moz-appearance: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow
-  transition: background-color 0.3s, box-shadow 0.3s; // Smooth transition for hover effects
-  @include user-select(none);
-
-  &:hover, &:focus {
-    background-color: #0056b3; // Darker blue on hover/focus
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); // More pronounced shadow on hover/focus
-  }
-}
-
+  border-radius: $radius;
 
   /*================ Set primary button colors - can override later ================*/
   background-color: $colorBtnPrimary;
