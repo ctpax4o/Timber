@@ -8,7 +8,7 @@
     "color_footer_bg": "#bfac9b",
     "color_footer_text": "#ffffff",
     "color_footer_social_link": "#ffffff",
-    "logo_use_image": false,
+    "logo_use_image": true,
     "favicon_enable": false,
     "footer_social_enable": true,
     "footer_newsletter_enable": false,
@@ -54,9 +54,7 @@
       "html {height: 100%;}",
       "body {display: flex; flex-direction: column; min-height: 100vh; margin: 0;}",
       ".content {flex: 1;}",
-      ".footer {flex-shrink: 0;}",
-      ".article-date {display: block; margin-bottom: 20px;}",
-      ".article-text {font-size: 16px; line-height: 1.6; color: #333;}"
+      ".footer {flex-shrink: 0;}"
     ]
   }
 }
