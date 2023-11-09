@@ -8,7 +8,7 @@
     "color_footer_bg": "#bfac9b",
     "color_footer_text": "#ffffff",
     "color_footer_social_link": "#ffffff",
-    "logo_use_image": true,
+    "logo_use_image": false,
     "favicon_enable": false,
     "footer_social_enable": true,
     "footer_newsletter_enable": false,
