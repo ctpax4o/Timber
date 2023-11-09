@@ -126,13 +126,9 @@
 
     <div class="grid__item large--one-third">
 
-      <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>
       <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+      <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>
 
-      {% comment %}
-        Add a surrounding div with class 'rte' to anything that will come from the rich text editor.
-        Since this is just a listing page, you can either use the excerpt or truncate the full article.
-      {% endcomment %}
       <div class="rte">
         {% if article.excerpt.size > 0 %}
           {{ article.excerpt }}
@@ -141,9 +137,6 @@
         {% endif %}
       </div>
 
-      {% comment %}
-        Show off meta information like number of comments and tags.
-      {% endcomment %}
       <ul>
         {% if blog.comments_enabled? %}
         <li>
@@ -161,3 +154,4 @@
 
   {% endfor %}
 </div>
+
