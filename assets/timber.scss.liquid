@@ -1100,24 +1100,21 @@ html input[disabled] {
   -moz-appearance: none;
   border-radius: $radius;
 
-
-  /* Define your colors and border-radius directly */
-:root {
-  --colorLink: #3498db; /* Replace with your preferred link color */
-  --colorLinkHover: #2980b9; /* Replace with your preferred hover color */
-  --radius: 4px; /* Replace with your preferred border-radius */
-}
+/* Define your colors and border-radius directly as SCSS variables */
+$colorLink: #3498db; /* Replace with your preferred link color */
+$colorLinkHover: #2980b9; /* Replace with your preferred hover color */
+$radius: 4px; /* Replace with your preferred border-radius */
 
 a,
 .text-link {
-  color: var(--colorLink) !important;
+  color: $colorLink !important;
   text-decoration: none !important;
   background: transparent !important;
 }
 
 a:hover,
 a:focus {
-  color: var(--colorLinkHover) !important;
+  color: $colorLinkHover !important;
 }
 
 button {
@@ -1148,10 +1145,11 @@ html input[disabled] {
           user-select: none !important;
   -webkit-appearance: none !important;
      -moz-appearance: none !important;
-  border-radius: var(--radius) !important;
+  border-radius: $radius !important;
 }
 
 /* Rest of your styles */
+
 
 
   /*================ Set primary button colors - can override later ================*/
