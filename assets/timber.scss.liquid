@@ -2265,6 +2265,16 @@ label.error {
   }
 }
 
+/* This will apply to all pages except the home page */
+body:not(.template-index) .grid__item.large--one-quarter {
+  display: none;
+}
+
+/* This ensures that on the home page the .large--one-quarter class is displayed */
+body.template-index .grid__item.large--one-quarter {
+  display: block; /* or 'inline-block', 'flex', 'grid' etc., depending on your layout */
+}
+
 
 /*============================================================================
   #Notes and Form Feedback
