@@ -1100,6 +1100,60 @@ html input[disabled] {
   -moz-appearance: none;
   border-radius: $radius;
 
+
+  /* Define your colors and border-radius directly */
+:root {
+  --colorLink: #3498db; /* Replace with your preferred link color */
+  --colorLinkHover: #2980b9; /* Replace with your preferred hover color */
+  --radius: 4px; /* Replace with your preferred border-radius */
+}
+
+a,
+.text-link {
+  color: var(--colorLink) !important;
+  text-decoration: none !important;
+  background: transparent !important;
+}
+
+a:hover,
+a:focus {
+  color: var(--colorLinkHover) !important;
+}
+
+button {
+  overflow: visible !important;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default !important;
+}
+
+.btn,
+.rte .btn {
+  display: inline-block !important;
+  padding: 8px 10px !important;
+  margin: 0 !important;
+  line-height: 1.42 !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  border: 1px solid transparent !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+  border-radius: var(--radius) !important;
+}
+
+/* Rest of your styles */
+
+
   /*================ Set primary button colors - can override later ================*/
   background-color: $colorBtnPrimary;
   color: $colorBtnPrimaryText;
