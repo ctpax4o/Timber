@@ -1,5 +1,25 @@
 {
-  "current": "Default",
+  "current": {
+    "color_primary": "#ffffff",
+    "color_secondary": "#bbb",
+    "color_borders": "#e5e5e5",
+    "color_body_bg": "#fff",
+    "color_body_text": "#ffffff",
+    "color_footer_bg": "#bfac9b",
+    "color_footer_text": "#ffffff",
+    "color_footer_social_link": "#ffffff",
+    "logo_use_image": false,
+    "favicon_enable": false,
+    "footer_social_enable": true,
+    "footer_newsletter_enable": false,
+    "cart_notes_enable": true,
+    "ajax_cart_method": "drawer",
+    "social_twitter_link": "",
+    "social_facebook_link": "http:\/\/www.intheflow.coffee\/",
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
     "Default": {
       "ajax_cart_method": "drawer",
@@ -19,5 +39,24 @@
       "social_facebook_link": "",
       "social_twitter_link": ""
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "body {background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0708\/1115\/6748\/files\/bg_450x.jpg?v=1699445874\"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}",
+      ".nav-bar {width: 100%; background-color: #bfac9b;}",
+      ".wrapper {max-width: 1200px; margin: 0 auto;}",
+      ".nav-bar a {color: #ffffff; text-decoration: none;}",
+      ".nav-bar a:hover {color: #dddddd;}",
+      "a.special-link {display: inline-block; background-color: #ff9900; color: #ffffff; padding: 10px 20px; margin: 10px 0; border-radius: 5px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: background-color 0.3s, transform 0.3s;}",
+      "a.special-link:hover,a.special-link:focus {background-color: #e68a00; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);}",
+      "a.special-link:active {transform: translateY(1px); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);}",
+      ".wrapper {max-width: 1400px; margin: 0 auto;}",
+      "html {height: 100%;}",
+      "body {display: flex; flex-direction: column; min-height: 100vh; margin: 0;}",
+      ".content {flex: 1;}",
+      ".footer {flex-shrink: 0;}",
+      ".article-date {display: block; margin-bottom: 20px;}",
+      ".article-text {font-size: 16px; line-height: 1.6; color: #333;}"
+    ]
   }
 }
