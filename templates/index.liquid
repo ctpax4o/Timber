@@ -119,9 +119,9 @@
   handle we want to focus on. For this example we'll use the default 'news',
   but you can create a blog page-specific content if you want.
 {% endcomment %}
-<h2>{{ 'homepage.sections.news_title' | t }}</h2>
+<h2 class="blog-post-title">Новини</h2>
 
-<div class="grid">
+<div class="grid blog-post-grid">
   {% for article in blogs['news'].articles limit:3 %}
 
     <div class="grid__item large--one-third">
