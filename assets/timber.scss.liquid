@@ -2567,64 +2567,58 @@ body.template-index .grid__item.large--one-quarter {
 {% endif %} // settings.ajax_cart_method
 
 /*=================GV============================*/
-/* Styles for desktop (screen width greater than 768px) */
-@media (min-width: 769px) {
-    #PageContainer > main > div {
-        display: flex;
-        justify-content: center;
-    }
-
-    #PageContainer > main > div > div.grid__item.large--three-quarters {
-        margin: 0; /* Override any existing margins if necessary */
-    }
-
-    #PageContainer > main > div > div.grid__item.large--three-quarters img {
-        border: 3px solid #cccccc; /* Add a border with your desired color and width */
-        border-radius: 8px; /* Rounded corners */
-        object-fit: cover; /* This will ensure that your images cover the area without stretching */
-        width: 100%; /* Ensure the image takes up the full container width */
-        height: auto; /* And adjusts height automatically to maintain aspect ratio */
-        transition: transform 0.3s ease; /* Smooth transition for any hover effects */
-    }
-
-    #PageContainer > main > div > div.grid__item.large--three-quarters img:hover {
-        transform: scale(1.05); /* Slightly enlarge images on hover for interactive effect */
-        border-color: #4A90E2; /* Change border color on hover if desired */
-    }
-
-    main.wrapper.main-content .grid__item img {
-        border: 3px solid #CCCCCC; /* Replace #CCCCCC with the color of your choice */
-        border-radius: 10px; /* This will give the images rounded corners */
-        object-fit: cover; /* This will make sure that the images cover their element box */
-        width: 100%; /* This ensures the image takes up the full width of its container */
-        height: auto; /* This will maintain the image aspect ratio */
-        transition: transform 0.3s ease; /* Smooth transition for hover effect */
-    }
-
-    main.wrapper.main-content .grid__item img:hover {
-        transform: scale(1.05); /* Slightly increase the size on hover for a dynamic effect */
-    }
-
-    main.wrapper.main-content h2 {
-        text-align: center;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-weight: 300;
-        letter-spacing: 1px;
-    }
-
-    .contact-page-form {
-        max-width: 600px; /* Adjust the width as needed */
-        margin-left: -20%; /* Left margin, smaller value to push it to the left */
-        margin-right: 70%; /* Right margin, larger value */
-        padding: 20px; /* Add padding around the form */
-        /* Add any additional styling you want for this form */
-    }
+/* Styles for both desktop and mobile */
+#PageContainer > main > div {
+    display: flex;
+    justify-content: center;
 }
 
-/* Styles for mobile (screen width up to 768px) */
-@media (max-width: 768px) {
-    /* Define styles for mobile here */
+#PageContainer > main > div > div.grid__item.large--three-quarters {
+    margin: 0; /* Override any existing margins if necessary */
 }
+
+#PageContainer > main > div > div.grid__item.large--three-quarters img {
+    border: 3px solid #cccccc; /* Add a border with your desired color and width */
+    border-radius: 8px; /* Rounded corners */
+    object-fit: cover; /* This will ensure that your images cover the area without stretching */
+    width: 100%; /* Ensure the image takes up the full container width */
+    height: auto; /* And adjusts height automatically to maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for any hover effects */
+}
+
+#PageContainer > main > div > div.grid__item.large--three-quarters img:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover for interactive effect */
+    border-color: #4A90E2; /* Change border color on hover if desired */
+}
+
+main.wrapper.main-content .grid__item img {
+    border: 3px solid #CCCCCC; /* Replace #CCCCCC with the color of your choice */
+    border-radius: 10px; /* This will give the images rounded corners */
+    object-fit: cover; /* This will make sure that the images cover their element box */
+    width: 100%; /* This ensures the image takes up the full width of its container */
+    height: auto; /* This will maintain the image aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+main.wrapper.main-content .grid__item img:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover for a dynamic effect */
+}
+
+main.wrapper.main-content h2 {
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.contact-page-form {
+    max-width: 600px; /* Adjust the width as needed */
+    margin-left: -20%; /* Left margin, smaller value to push it to the left */
+    margin-right: 70%; /* Right margin, larger value */
+    padding: 20px; /* Add padding around the form */
+    /* Add any additional styling you want for this form */
+}
+
 
 
 
