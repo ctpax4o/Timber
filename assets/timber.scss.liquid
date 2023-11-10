@@ -2643,14 +2643,15 @@ h1:hover {
         padding: 20px;
     }
 
-    /* Make site navigation as wide as the large grid */
+    /* Match Navbar width to the large grid */
     #AccessibleNav {
-        width: 100%;
+        max-width: /* same max-width as the large grid, e.g., 1200px */;
+        margin: auto;
     }
 
-    /* Add padding between site navigation and special offers title */
+    /* Add space above Special Offers Title */
     .special-offers-title {
-        padding-top: 20px;
+        margin-top: 20px; /* Adjust as needed */
     }
 }
 
@@ -2685,16 +2686,14 @@ h1:hover {
         padding: 15px;
     }
 
-    /* Special Offers Grid - already adjusted for mobile */
-
-    /* Make site navigation as wide as the large grid for mobile */
+    /* Mobile: Match Navbar width to the content */
     #AccessibleNav {
         width: 100%;
     }
 
-    /* Add padding between site navigation and special offers title for mobile */
+    /* Mobile: Add space above Special Offers Title */
     .special-offers-title {
-        padding-top: 20px;
+        margin-top: 20px; /* Adjust as needed */
     }
 }
 
