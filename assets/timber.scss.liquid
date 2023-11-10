@@ -2194,11 +2194,15 @@ label.error {
     background-color: $colorFooterBg; /* Sets the background color */
     padding: 10px 0; /* Reduced padding for a shorter height */
     color: $colorFooterText; /* Sets the text color */
+    position: fixed; /* Positions the footer fixed at the bottom of the viewport */
+    bottom: 0; /* Anchors the footer to the bottom */
+    width: 100%; /* Ensures the footer extends full width */
 
     @include at-query ($min, $large) {
         padding: 20px 0; /* Adjusted padding for larger screens */
     }
 }
+
 
 /*============================================================================
   #Product and Collection Grids
