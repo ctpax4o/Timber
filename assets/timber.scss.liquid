@@ -2194,23 +2194,11 @@ label.error {
     background-color: $colorFooterBg; /* Sets the background color */
     padding: 10px 0; /* Reduced padding for a shorter height */
     color: $colorFooterText; /* Sets the text color */
-    position: absolute; /* Positions the footer absolutely relative to its parent */
-    bottom: 0; /* Anchors the footer to the bottom */
-    width: 100%; /* Ensures the footer extends full width */
 
     @include at-query ($min, $large) {
         padding: 20px 0; /* Adjusted padding for larger screens */
     }
 }
-
-/* Ensuring the main content does not overlap with the footer */
-.wrapper {
-    min-height: 100vh; /* Sets minimum height of the wrapper to be full viewport height */
-    position: relative; /* Needed to position the footer at the bottom */
-    padding-bottom: 5px; /* Adjust this to the height of your footer to avoid content overlap */
-}
-
-
 
 /*============================================================================
   #Product and Collection Grids
