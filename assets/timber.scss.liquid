@@ -2566,95 +2566,6 @@ body.template-index .grid__item.large--one-quarter {
 
 {% endif %} // settings.ajax_cart_method
 
-/*=================GV============================*/
-
-/* Site Title (h1) Styling */
-h1 {
-    font-family: 'Georgia', serif;
-    color: #360A73; /* Dark purple color */
-    text-shadow: 1px 1px 2px #360A73;
-    font-size: 36px;
-    letter-spacing: 0.5px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    text-align: center;
-    background-color: #BFAC9B;
-    padding: 15px 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-h1:hover {
-    transform: scale(1.05);
-    color: #5A4230; /* Slightly darker color on hover */
-}
-
-/* Desktop Styles */
-@media (min-width: 769px) {
-    /* Center-align main content container */
-    #PageContainer > main > div {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* Styles for large grid items */
-    #PageContainer > main > div > div.grid__item.large--three-quarters {
-        margin: 0;
-    }
-
-    #PageContainer > main > div > div.grid__item.large--three-quarters img,
-    main.wrapper.main-content .grid__item img {
-        border: 3px solid #cccccc;
-        border-radius: 8px;
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease;
-    }
-
-    #PageContainer > main > div > div.grid__item.large--three-quarters img:hover,
-    main.wrapper.main-content .grid__item img:hover {
-        transform: scale(1.05);
-        border-color: #4A90E2;
-    }
-
-    /* Center-align h2 headers and apply styling */
-    .special-offers-title, .shop-title, .blog-post-title {
-        text-align: center;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-weight: 300;
-        letter-spacing: 1px;
-        font-size: 24px;
-        background-color: #8B4513;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 8px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        cursor: pointer;
-    }
-
-    /* Styling for contact page form */
-    .contact-page-form {
-        max-width: 600px;
-        margin-left: -20%;
-        margin-right: 70%;
-        padding: 20px;
-    }
-
-    /* Make site navigation as wide as the large grid */
-    #AccessibleNav {
-        width: 100%;
-    }
-
-    /* Add padding between site navigation and special offers title */
-    .special-offers-title {
-        padding-top: 20px;
-    }
-}
-
-/* Mobile Styles */
 @media screen and (max-width: 768px) {
     /* Center-align main content container on narrow screens */
     #PageContainer > main > div {
@@ -2665,37 +2576,30 @@ h1:hover {
 
     /* Image styling for grid items */
     main.wrapper.main-content .grid__item img {
-        border: 2px solid #cccccc;
-        border-radius: 5px;
+        border: 2px solid #cccccc; /* Slightly thinner border for mobile */
+        border-radius: 5px; /* Adjusted for mobile */
         object-fit: cover;
         width: 100%;
         height: auto;
         transition: transform 0.3s ease;
     }
 
-    /* Header styling for mobile */
+    /* Header styling */
     .special-offers-title, .shop-title, .blog-post-title {
-        font-size: 20px;
+        font-size: 20px; /* Slightly smaller font size for mobile */
+        /* Other styles remain the same */
     }
 
-    /* Contact page form styling for mobile */
+    /* Contact page form */
     .contact-page-form {
-        max-width: 100%;
-        margin: 10px;
-        padding: 15px;
+        max-width: 100%; /* Full width on mobile */
+        margin: 10px; /* Adjusted margin for mobile */
+        padding: 15px; /* Adjusted padding for mobile */
     }
 
-    /* Special Offers Grid - already adjusted for mobile */
+    /* Special Offers Grid - already adjusted for mobile in previous steps */
 
-    /* Make site navigation as wide as the large grid for mobile */
-    #AccessibleNav {
-        width: 100%;
-    }
-
-    /* Add padding between site navigation and special offers title for mobile */
-    .special-offers-title {
-        padding-top: 20px;
-    }
+    /* Add any additional mobile-specific styles here */
 }
 
 
