@@ -2609,21 +2609,21 @@ main.wrapper.main-content h2 {
   font-weight: 300;
   letter-spacing: 1px;
 }
-.grid__item.large--two-thirds.push--large--one-sixth .form-vertical {
-  position: fixed; /* Position relative to the viewport */
-  left: 50%; /* Position halfway across the screen */
-  top: 50%; /* Position halfway down the screen */
-  transform: translate(-50%, -50%); /* Center the form exactly */
-  width: auto; /* Let the form take up the space it needs */
-  max-width: 600px; /* Set a maximum width for the form */
-  width: 80%; /* Make the form take up most of the container, adjust as needed */
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Optional: Adds a shadow for better visibility */
+/* Ensure the main container allows for absolute positioning */
+.main-content {
+  position: relative;
 }
 
-
-.grid__item.large--two-thirds.push--large--one-sixth h1 {
-  margin-top: 0;
-  text-align: center; /* Center the title */
+/* Style the form container */
+.grid__item.large--two-thirds.push--large--one-sixth .form-vertical {
+  position: absolute; /* Position relative to the nearest relative parent */
+  left: 50%; /* Position halfway across the container */
+  top: 50%; /* Position halfway down the container */
+  transform: translate(-50%, -50%); /* Center the form exactly */
+  max-width: 600px; /* Set a maximum width for the form */
+  width: 80%; /* Make the form take up most of the container, adjust as needed */
+  z-index: 10; /* Ensure the form is above other elements */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Optional: Adds a shadow for better visibility */
 }
 
 
