@@ -2640,11 +2640,13 @@ body.template-index .grid__item.large--one-quarter {
         justify-content: space-between; /* Distribute space between items */
     }
 
-    /* Adjust the individual grid items */
+@media screen and (max-width: 768px) {
     .special-offers-grid .grid__item {
-        width: 48%; /* Slightly less than half to accommodate margins */
-        margin: 1%; /* Small margin for separation */
-        box-sizing: border-box; /* Include padding and border in the width */
+        width: 48%; /* Simplified width */
+        margin: 1%; /* Simplified margin */
+    }
+}
+
     }
 
     /* Mobile-specific adjustments for h2 headers */
