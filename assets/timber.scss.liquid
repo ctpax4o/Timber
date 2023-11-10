@@ -2620,9 +2620,10 @@ body.template-index .grid__item.large--one-quarter {
     }
 }
 
-/* Styles for mobile (screen width up to 768px) */
+
+/* Styles for devices with a narrow screen aspect ratio */
 @media screen and (max-aspect-ratio: 2/3) {
-    /* Center-align main content container on mobile */
+    /* Center-align main content container on narrow screens */
     #PageContainer > main > div,
     .grid-offers,
     .blog-post-holder {
@@ -2630,7 +2631,7 @@ body.template-index .grid__item.large--one-quarter {
         justify-content: center;
     }
 
-    /* Styles for grid items in special offers on mobile */
+    /* Styles for grid items in special offers on narrow screens */
     .grid-offers .grid__item {
         width: calc(50% - 20px);
         margin: 10px;
@@ -2638,7 +2639,7 @@ body.template-index .grid__item.large--one-quarter {
         text-align: center;
     }
 
-    /* Styles for blog post header on mobile */
+    /* Styles for blog post header on narrow screens */
     .blog-post-holder h3 {
         font-size: 24px;
         text-align: center;
@@ -2650,13 +2651,13 @@ body.template-index .grid__item.large--one-quarter {
         cursor: pointer;
     }
 
-    /* Hover effect for blog post header on mobile */
+    /* Hover effect for blog post header on narrow screens */
     .blog-post-holder h3:hover {
         background-color: #A0522D;
         transform: scale(1.05);
     }
 
-    /* Styles for blog post text and date on mobile */
+    /* Styles for blog post text and date on narrow screens */
     .blog-post-holder .rte p,
     .blog-post-holder time {
         font-size: 16px;
@@ -2664,5 +2665,10 @@ body.template-index .grid__item.large--one-quarter {
         color: white;
         text-align: center;
     }
+
+    /* Additional mobile-specific styles can be added here */
 }
+
+/* The rest of your desktop and tablet styles remain unchanged */
+
 
