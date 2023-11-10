@@ -2591,5 +2591,29 @@ body.template-index .grid__item.large--one-quarter {
   transform: scale(1.05); /* Slightly enlarge images on hover for interactive effect */
   border-color: #4A90E2; /* Soft blue highlight color on hover */
 }
+/* This targets the main container on the home page */
+#PageContainer > main {
+  display: flex;
+  justify-content: center;
+}
+
+/* This targets grid items within the main container on the home page */
+#PageContainer > main > .grid__item {
+  margin: 0; /* Override any existing margins if necessary */
+  /* Add additional styling for grid items here */
+  border: 2px solid #CCCCCC; /* Example border */
+  border-radius: 10px; /* Example border radius to smooth edges */
+  overflow: hidden; /* Ensures content fits within the border radius */
+}
+
+/* If you want to specifically target only the large grid items */
+#PageContainer > main > .grid__item.large--three-quarters {
+  /* Add styles specific for large grid items if needed */
+}
+
+/* To ensure images within grid items have rounded corners */
+#PageContainer > main .grid__item img {
+  border-radius: 10px; /* This should match the border-radius of the grid item if you want the images to also have rounded corners */
+}
 
 
