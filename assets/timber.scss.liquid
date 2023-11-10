@@ -2567,122 +2567,107 @@ body.template-index .grid__item.large--one-quarter {
 {% endif %} // settings.ajax_cart_method
 
 /*=================GV============================*/
-//* Styles for desktop (screen width greater than 768px) */
+/* Styles for desktop (screen width greater than 768px) */
 @media (min-width: 769px) {
+    /* Center-align main content container */
     #PageContainer > main > div {
         display: flex;
         justify-content: center;
     }
 
-    #PageContainer > main > div > div.grid__item.large--three-quarters {
-        margin: 0; /* Override any existing margins if necessary */
+    /* Styles for large grid items */
+    .special-offers-grid .grid__item.large--three-quarters {
+        margin: 0;
     }
 
-    #PageContainer > main > div > div.grid__item.large--three-quarters img {
-        border: 3px solid #cccccc; /* Add a border with your desired color and width */
-        border-radius: 8px; /* Rounded corners */
-        object-fit: cover; /* This will ensure that your images cover the area without stretching */
-        width: 100%; /* Ensure the image takes up the full container width */
-        height: auto; /* And adjusts height automatically to maintain aspect ratio */
-        transition: transform 0.3s ease; /* Smooth transition for any hover effects */
+    .special-offers-grid .grid__item.large--three-quarters img,
+    .shop-grid .grid__item img,
+    .blog-post-grid .grid__item img {
+        border: 3px solid #cccccc;
+        border-radius: 8px;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
     }
 
-    #PageContainer > main > div > div.grid__item.large--three-quarters img:hover {
-        transform: scale(1.05); /* Slightly enlarge images on hover for interactive effect */
-        border-color: #4A90E2; /* Change border color on hover if desired */
+    .special-offers-grid .grid__item.large--three-quarters img:hover,
+    .shop-grid .grid__item img:hover,
+    .blog-post-grid .grid__item img:hover {
+        transform: scale(1.05);
+        border-color: #4A90E2;
     }
 
-    main.wrapper.main-content .grid__item img {
-        border: 3px solid #CCCCCC; /* Replace #CCCCCC with the color of your choice */
-        border-radius: 10px; /* This will give the images rounded corners */
-        object-fit: cover; /* This will make sure that the images cover their element box */
-        width: 100%; /* This ensures the image takes up the full width of its container */
-        height: auto; /* This will maintain the image aspect ratio */
-        transition: transform 0.3s ease; /* Smooth transition for hover effect */
-    }
-
-    main.wrapper.main-content .grid__item img:hover {
-        transform: scale(1.05); /* Slightly increase the size on hover for a dynamic effect */
-    }
-
-    main.wrapper.main-content h2 {
+    /* Center-align h2 headers and apply mobile header styling */
+    .special-offers-title,
+    .shop-title,
+    .blog-post-title {
         text-align: center;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 300;
         letter-spacing: 1px;
-        /* Apply mobile header styling */
-        font-size: 24px; /* Adjust the font size as needed */
-        background-color: #8B4513; /* Coffee-related color */
-        color: #fff; /* Text color */
-        padding: 10px 20px; /* Padding */
-        border-radius: 8px; /* Rounded corners */
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-        cursor: pointer; /* Add pointer cursor on hover */
+        font-size: 24px;
+        background-color: #8B4513;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
     }
 
+    /* Styling for contact page form */
     .contact-page-form {
-        max-width: 600px; /* Adjust the width as needed */
-        margin-left: -20%; /* Left margin, smaller value to push it to the left */
-        margin-right: 70%; /* Right margin, larger value */
-        padding: 20px; /* Add padding around the form */
-        /* Add any additional styling you want for this form */
+        max-width: 600px;
+        margin-left: -20%;
+        margin-right: 70%;
+        padding: 20px;
     }
 }
 
 /* Styles for mobile (screen width up to 768px) */
 @media (max-width: 768px) {
-    /* Center-align the main content container on mobile */
-    #PageContainer > main > div {
+    /* Center-align main content container on mobile */
+    #PageContainer > main > div,
+    .special-offers-grid,
+    .shop-grid,
+    .blog-post-grid {
         display: flex;
         justify-content: center;
     }
 
-    /* Adjust the width and spacing of grid items for special offers on mobile */
-    .grid-offers {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .grid-offers .grid__item {
-        width: calc(50% - 20px); /* Set the width to 50% with spacing on mobile */
-        margin: 10px; /* Add margin to create spacing between grid items */
-        box-sizing: border-box; /* Ensure padding doesn't affect width */
-        text-align: center; /* Center-align grid items on mobile */
-    }
-
-    /* Center-align the blog post container on mobile */
-    .blog-post-holder {
+    /* Styles for grid items in special offers on mobile */
+    .special-offers-grid .grid__item {
+        width: calc(50% - 20px);
+        margin: 10px;
+        box-sizing: border-box;
         text-align: center;
     }
 
-    /* Style the blog post header and center-align on mobile */
-    .blog-post-holder h3 {
-        font-size: 24px; /* Adjust the font size as needed */
-        text-align: center; /* Center-align the header on mobile */
-        background-color: #8B4513; /* Coffee-related color */
-        color: #fff; /* Text color */
-        padding: 10px 20px; /* Padding */
-        border-radius: 8px; /* Rounded corners */
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-        cursor: pointer; /* Add pointer cursor on hover */
+    /* Styles for blog post header on mobile */
+    .blog-post-title {
+        font-size: 24px;
+        text-align: center;
+        background-color: #8B4513;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
     }
 
-    /* Apply hover effect to the blog post header on mobile */
-    .blog-post-holder h3:hover {
-        background-color: #A0522D; /* Darker coffee-related color on hover */
-        transform: scale(1.05); /* Slightly enlarge on hover */
+    /* Hover effect for blog post header on mobile */
+    .blog-post-title:hover {
+        background-color: #A0522D;
+        transform: scale(1.05);
     }
 
-    /* Center-align the blog post text and date on mobile */
-    .blog-post-holder .rte p,
-    .blog-post-holder time {
-        font-size: 16px; /* Adjust font size as needed */
-        line-height: 1.4; /* Adjust line height as needed */
-        color: white; /* Text color */
-        text-align: center; /* Center-align paragraphs and date on mobile */
+    /* Styles for blog post text and date on mobile */
+    .blog-post-grid .rte p,
+    .blog-post-grid time {
+        font-size: 16px;
+        line-height: 1.4;
+        color: white;
+        text-align: center;
     }
 }
-
- 
 
