@@ -2611,10 +2611,14 @@ main.wrapper.main-content h2 {
 }
 
 .contact-page-form {
-    /* Your specific styles for the contact form */
-    max-width: 6000px; /* Example: Set a max width */
-    margin: 0 auto; /* Center the form in the page */
-    padding: 20px; /* Add some padding */
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding around the form */
+    position: relative; /* Position it relative to its normal position */
+    top: 50%; /* Move it down by half of its own height */
+    transform: translateY(-50%); /* Translate it up by half of its own height for vertical centering */
+    left: 50%; /* Move it right by half of its own width */
+    transform: translateX(-50%); /* Translate it left by half of its own width for horizontal centering */
 }
 
 
