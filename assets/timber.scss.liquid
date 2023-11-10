@@ -2591,6 +2591,18 @@ body.template-index .grid__item.large--one-quarter {
   transform: scale(1.05); /* Slightly enlarge images on hover for interactive effect */
   border-color: #4A90E2; /* Soft blue highlight color on hover */
 }
+main.wrapper.main-content .grid__item img {
+  border: 3px solid #CCCCCC; /* Replace #CCCCCC with the color of your choice */
+  border-radius: 10px; /* This will give the images rounded corners */
+  object-fit: cover; /* This will make sure that the images cover their element box */
+  width: 100%; /* This ensures the image takes up the full width of its container */
+  height: auto; /* This will maintain the image aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+main.wrapper.main-content .grid__item img:hover {
+  transform: scale(1.05); /* Slightly increase the size on hover for a dynamic effect */
+}
 
 
 
