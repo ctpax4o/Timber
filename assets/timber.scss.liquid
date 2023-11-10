@@ -2191,25 +2191,14 @@ label.error {
 ==============================================================================*/
 /* Footer Customization */
 .site-footer {
-    background-color: #333; /* Example background color */
-    padding: 20px 0; /* Adjusted padding for a shorter height, example values */
-    color: #fff; /* Example text color */
-    position: absolute; /* Positions the footer absolutely relative to its parent */
-    bottom: 0; /* Anchors the footer to the bottom */
-    width: 100%; /* Ensures the footer extends full width */
+    background-color: $colorFooterBg; /* Sets the background color */
+    padding: 10px 0; /* Reduced padding for a shorter height */
+    color: $colorFooterText; /* Sets the text color */
 
     @include at-query ($min, $large) {
-        padding: 40px 0; /* Adjusted padding for larger screens, example values */
+        padding: 20px 0; /* Adjusted padding for larger screens */
     }
 }
-
-/* Ensuring the main content does not overlap with the footer */
-.wrapper {
-    min-height: calc(100vh - 120px); /* Sets minimum height of the wrapper to be full viewport height minus footer height, example value of 120px */
-    padding-bottom: 120px; /* Adjust this to the height of your footer to avoid content overlap, example value of 120px */
-    box-sizing: border-box; /* Ensures padding is included in the calculated height */
-}
-
 
 /*============================================================================
   #Product and Collection Grids
