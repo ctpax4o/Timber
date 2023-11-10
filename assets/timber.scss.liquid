@@ -2609,21 +2609,19 @@ main.wrapper.main-content h2 {
   font-weight: 300;
   letter-spacing: 1px;
 }
-.grid__item.large--two-thirds.push--large--one-sixth {
+.main-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 
-.grid__item.large--two-thirds.push--large--one-sixth h1 {
-  margin-top: 0;
-}
-
-.grid__item.large--two-thirds.push--large--one-sixth .rte,
-.grid__item.large--two-thirds.push--large--one-sixth .form-vertical {
+.grid {
   width: 100%;
-  /* Apply additional styles as needed */
+  max-width: 600px; /* Adjust this value based on your preferred width */
+  margin: auto;
+}
+
+.grid__item.large--two-thirds.push--large--one-sixth {
+  width: 100%;
 }
 
 
