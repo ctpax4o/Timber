@@ -2632,16 +2632,16 @@ body.template-index .grid__item.large--one-quarter {
         align-items: center;
     }
 
-    /* Ensure the grid container takes the full width */
-    .special-offers-grid {
-        width: 100%; /* Full width */
+    /* Target the grid-uniform class along with special-offers-grid */
+    .grid-uniform.special-offers-grid {
+        width: 100%; /* Ensuring full width */
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; /* Distribute space between items */
+        justify-content: space-around; /* Evenly space items */
     }
 
-    /* Adjust the individual grid items */
-    .special-offers-grid .grid__item {
+    /* Adjust the individual grid items within special-offers-grid */
+    .grid-uniform.special-offers-grid .grid__item {
         box-sizing: border-box; /* Include padding and border in the width */
         width: calc(50% - 10px); /* Adjust width to fit two items per row */
         margin: 5px; /* Margin for separation */
@@ -2654,3 +2654,4 @@ body.template-index .grid__item.large--one-quarter {
 
     /* Additional mobile-specific styles can be added here */
 }
+
