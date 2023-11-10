@@ -2609,23 +2609,18 @@ main.wrapper.main-content h2 {
   font-weight: 300;
   letter-spacing: 1px;
 }
-/* Ensure the main container allows for absolute positioning */
-.main-content {
-  position: relative;
+
+.grid {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
 }
 
-/* Style the form container */
-.grid__item.large--two-thirds.push--large--one-sixth .form-vertical {
-  position: absolute; /* Position relative to the nearest relative parent */
-  left: 50%; /* Position halfway across the container */
-  top: 50%; /* Position halfway down the container */
-  transform: translate(-50%, -50%); /* Center the form exactly */
-  max-width: 600px; /* Set a maximum width for the form */
-  width: 80%; /* Make the form take up most of the container, adjust as needed */
-  z-index: 10; /* Ensure the form is above other elements */
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Optional: Adds a shadow for better visibility */
+.grid__item.large--two-thirds.push--large--one-sixth {
+  /* Ensure the div doesn't stretch to fill the container */
+  max-width: 100%; 
+  margin: auto; /* Additional centering adjustment if needed */
 }
-
-
 
 
