@@ -2645,92 +2645,60 @@ body.template-index .grid__item.large--one-quarter {
 /* Styles for mobile (screen width up to 768px) */
 /* Styles for mobile (screen width up to 768px) */
 /* Styles for mobile (screen width up to 768px) */
-@media (max-width: 768px) {
-    /* Style all h2 headers and center-align */
-    .wrapper.main-content h2 {
-        font-size: 24px; /* Adjust the font size as needed */
-        text-align: center; /* Center-align all h2 headers */
-        background-color: #8B4513; /* Coffee-related color */
-        color: #fff; /* Text color */
-        padding: 10px 20px; /* Padding */
+/* Styles for desktop and mobile (screen width up to 768px) */
+@media (min-width: 769px), (max-width: 768px) {
+    #PageContainer > main > div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #PageContainer > main > div > div.grid__item.large--three-quarters {
+        margin: 0; /* Override any existing margins if necessary */
+    }
+
+    #PageContainer > main > div > div.grid__item.large--three-quarters img {
+        border: 3px solid #cccccc; /* Add a border with your desired color and width */
         border-radius: 8px; /* Rounded corners */
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-        cursor: pointer; /* Add pointer cursor on hover */
+        object-fit: cover; /* This will ensure that your images cover the area without stretching */
+        width: 100%; /* Ensure the image takes up the full container width */
+        height: auto; /* And adjusts height automatically to maintain aspect ratio */
+        transition: transform 0.3s ease; /* Smooth transition for any hover effects */
     }
 
-    /* Apply hover effect to all h2 headers */
-    main.wrapper.main-content h2:hover {
-        background-color: #A0522D; /* Darker coffee-related color on hover */
-        transform: scale(1.05); /* Slightly enlarge on hover */
+    #PageContainer > main > div > div.grid__item.large--three-quarters img:hover {
+        transform: scale(1.05); /* Slightly enlarge images on hover for interactive effect */
+        border-color: #4A90E2; /* Change border color on hover if desired */
     }
 
-    /* Center-align the paragraph following h2 headers */
-    main.wrapper.main-content h2 + .grid-uniform {
+    main.wrapper.main-content .grid__item img {
+        border: 3px solid #CCCCCC; /* Replace #CCCCCC with the color of your choice */
+        border-radius: 10px; /* This will give the images rounded corners */
+        object-fit: cover; /* This will make sure that the images cover their element box */
+        width: 100%; /* This ensures the image takes up the full width of its container */
+        height: auto; /* This will maintain the image aspect ratio */
+        transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    main.wrapper.main-content .grid__item img:hover {
+        transform: scale(1.05); /* Slightly increase the size on hover for a dynamic effect */
+    }
+
+    main.wrapper.main-content h2 {
         text-align: center;
-        padding: 10px; /* Add padding to the paragraph */
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
     }
 
-    /* Smoothen the edges of photos and add hover effect */
-    .grid-uniform .grid__item img {
-        border-radius: 8px; /* Rounded corners for images */
-        transition: transform 0.3s ease; /* Smooth transition on hover */
-    }
-
-    .grid-uniform .grid__item img:hover {
-        transform: scale(1.05); /* Slightly enlarge images on hover */
-    }
-
-    /* Center-align the blog post text for both desktop and mobile */
-    .grid__item.large--one-third .rte {
-        text-align: center; /* Center-align text */
-    }
-
-    /* Style the blog post text and center-align */
-    .grid__item.large--one-third .rte p {
-        font-size: 16px; /* Adjust font size as needed */
-        line-height: 1.4; /* Adjust line height as needed */
-        color: white; /* Text color */
-        text-align: center; /* Center-align paragraphs */
-    }
-
-    /* Center-align the title of the blog article for mobile */
-    .grid__item.large--one-third h3 {
-        text-align: center;
-        color: white; /* Text color */
-    }
-
-    /* Center-align the date for mobile */
-    .grid__item.large--one-third time {
-        text-align: center;
-        color: white; /* Text color */
+    .contact-page-form {
+        max-width: 600px; /* Adjust the width as needed */
+        margin-left: -20%; /* Left margin, smaller value to push it to the left */
+        margin-right: 70%; /* Right margin, larger value */
+        padding: 20px; /* Add padding around the form */
+        /* Add any additional styling you want for this form */
     }
 }
 
-
-/* Center-align the paragraph, title, and date for mobile */
-.grid__item.large--one-third {
-    text-align: center;
-    color: white; /* Text color */
-}
-
-/* Style the blog post text and center-align */
-.grid__item.large--one-third .rte p {
-    font-size: 16px; /* Adjust font size as needed */
-    line-height: 1.4; /* Adjust line height as needed */
-    text-align: center; /* Center-align paragraphs */
-}
-
-/* Center-align the title of the blog article for mobile */
-.grid__item.large--one-third h3 {
-    text-align: center;
-    color: white; /* Text color */
-}
-
-/* Center-align the date for mobile */
-.grid__item.large--one-third time {
-    text-align: center;
-    color: white; /* Text color */
-}
 
 
 
