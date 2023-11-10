@@ -2187,16 +2187,17 @@ label.error {
 }
 
 /*============================================================================
-  #Site Footer
+  #Site Footer - modified by GV
 ==============================================================================*/
+/* Footer Customization */
 .site-footer {
-  background-color: $colorFooterBg;
-  padding: $gutter 0;
-  color: $colorFooterText;
+    background-color: $colorFooterBg; /* Sets the background color */
+    padding: 10px 0; /* Reduced padding for a shorter height */
+    color: $colorFooterText; /* Sets the text color */
 
-  @include at-query ($min, $large) {
-    padding: ($gutter * 2) 0;
-  }
+    @include at-query ($min, $large) {
+        padding: 20px 0; /* Adjusted padding for larger screens */
+    }
 }
 
 /*============================================================================
