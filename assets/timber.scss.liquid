@@ -2609,12 +2609,15 @@ main.wrapper.main-content h2 {
   font-weight: 300;
   letter-spacing: 1px;
 }
-.grid__item.large--two-thirds.push--large--one-sixth {
-  position: relative; /* Set the position context */
-  margin: auto; /* Center horizontally */
-  left: 50%; /* Shift to the middle */
-  transform: translateX(-50%); /* Adjust to center precisely */
+.grid__item.large--two-thirds.push--large--one-sixth .form-vertical {
+  position: fixed; /* Position relative to the viewport */
+  left: 50%; /* Position halfway across the screen */
+  top: 50%; /* Position halfway down the screen */
+  transform: translate(-50%, -50%); /* Center the form exactly */
+  width: auto; /* Adjust the width as needed */
+  /* Apply additional styles as needed */
 }
+
 
 .grid__item.large--two-thirds.push--large--one-sixth h1 {
   margin-top: 0;
