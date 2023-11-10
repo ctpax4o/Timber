@@ -2564,3 +2564,28 @@ body.template-index .grid__item.large--one-quarter {
 }
 
 {% endif %} // settings.ajax_cart_method
+
+/*=================GV============================*/
+/* Assuming 'nasheto-kafe' is the handle for your collection */
+body.template-collection.collection-nasheto-kafe .grid__item {
+  width: 33.333%; /* Adjusts the width to spread out over the full row, for a 3-column layout */
+}
+
+/* For responsive design, you might want to only apply this on larger screens and adjust for smaller ones */
+@media (min-width: 1024px) {
+  body.template-collection.collection-nasheto-kafe .grid__item {
+    width: 33.333%;
+  }
+}
+
+@media (max-width: 1023px) {
+  body.template-collection.collection-nasheto-kafe .grid__item {
+    width: 50%; /* 2-column layout for smaller screens */
+  }
+}
+
+@media (max-width: 767px) {
+  body.template-collection.collection-nasheto-kafe .grid__item {
+    width: 100%; /* 1-column layout for mobile screens */
+  }
+}
