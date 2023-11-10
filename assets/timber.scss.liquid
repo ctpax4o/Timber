@@ -2642,8 +2642,9 @@ body.template-index .grid__item.large--one-quarter {
 
     /* Adjust the individual grid items */
     .special-offers-grid .grid__item {
-        width: 20%; /* Simplified width */
-        margin: 1%; /* Simplified margin */
+        width: 48%; /* Slightly less than half to accommodate margins */
+        margin: 1%; /* Small margin for separation */
+        box-sizing: border-box; /* Include padding and border in the width */
     }
 
     /* Mobile-specific adjustments for h2 headers */
@@ -2653,4 +2654,3 @@ body.template-index .grid__item.large--one-quarter {
 
     /* Additional mobile-specific styles can be added here */
 }
-
