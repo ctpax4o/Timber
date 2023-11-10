@@ -2566,9 +2566,13 @@ body.template-index .grid__item.large--one-quarter {
 {% endif %} // settings.ajax_cart_method
 
 /*=================GV============================*/
-.main.wrapper.main-content {
-  display: flex; /* This will create a flex container */
-  justify-content: center; /* This will center the children elements horizontally within the container */
-  flex-wrap: wrap; /* This will allow the children elements to wrap onto the next line if needed */
+#PageContainer > main > div > div.grid__item.large--three-quarters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* This will center the child elements */
+  align-items: start; /* This will align items to the start of the cross axis */
+  margin-left: auto; /* These two properties will center the .large--three-quarters div itself */
+  margin-right: auto;
+  max-width: 1200px; /* Adjust max-width as necessary for your design */
 }
 
