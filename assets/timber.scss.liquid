@@ -2576,13 +2576,12 @@ body.template-index .grid__item.large--one-quarter {
     }
 
     /* Styles for large grid items */
-    .special-offers-grid .grid__item.large--three-quarters {
+    #PageContainer > main > div > div.grid__item.large--three-quarters {
         margin: 0;
     }
 
-    .special-offers-grid .grid__item.large--three-quarters img,
-    .shop-grid .grid__item img,
-    .blog-post-grid .grid__item img {
+    #PageContainer > main > div > div.grid__item.large--three-quarters img,
+    main.wrapper.main-content .grid__item img {
         border: 3px solid #cccccc;
         border-radius: 8px;
         object-fit: cover;
@@ -2591,17 +2590,14 @@ body.template-index .grid__item.large--one-quarter {
         transition: transform 0.3s ease;
     }
 
-    .special-offers-grid .grid__item.large--three-quarters img:hover,
-    .shop-grid .grid__item img:hover,
-    .blog-post-grid .grid__item img:hover {
+    #PageContainer > main > div > div.grid__item.large--three-quarters img:hover,
+    main.wrapper.main-content .grid__item img:hover {
         transform: scale(1.05);
         border-color: #4A90E2;
     }
 
     /* Center-align h2 headers and apply mobile header styling */
-    .special-offers-title,
-    .shop-title,
-    .blog-post-title {
+    main.wrapper.main-content h2 {
         text-align: center;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 300;
@@ -2628,15 +2624,14 @@ body.template-index .grid__item.large--one-quarter {
 @media (max-width: 768px) {
     /* Center-align main content container on mobile */
     #PageContainer > main > div,
-    .special-offers-grid,
-    .shop-grid,
-    .blog-post-grid {
+    .grid-offers,
+    .blog-post-holder {
         display: flex;
         justify-content: center;
     }
 
     /* Styles for grid items in special offers on mobile */
-    .special-offers-grid .grid__item {
+    .grid-offers .grid__item {
         width: calc(50% - 20px);
         margin: 10px;
         box-sizing: border-box;
@@ -2644,7 +2639,7 @@ body.template-index .grid__item.large--one-quarter {
     }
 
     /* Styles for blog post header on mobile */
-    .blog-post-title {
+    .blog-post-holder h3 {
         font-size: 24px;
         text-align: center;
         background-color: #8B4513;
@@ -2656,14 +2651,14 @@ body.template-index .grid__item.large--one-quarter {
     }
 
     /* Hover effect for blog post header on mobile */
-    .blog-post-title:hover {
+    .blog-post-holder h3:hover {
         background-color: #A0522D;
         transform: scale(1.05);
     }
 
     /* Styles for blog post text and date on mobile */
-    .blog-post-grid .rte p,
-    .blog-post-grid time {
+    .blog-post-holder .rte p,
+    .blog-post-holder time {
         font-size: 16px;
         line-height: 1.4;
         color: white;
