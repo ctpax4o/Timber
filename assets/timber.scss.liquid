@@ -2676,4 +2676,41 @@ body.template-index .grid__item.large--one-quarter {
         color: white;
     }
 }
+ .blog-post-holder h3 {
+        text-align: center;
+        color: white;
+        font-size: 24px; /* Adjust the font size as needed */
+        background-color: #8B4513; /* Coffee-related color */
+        padding: 10px 20px; /* Padding */
+        border-radius: 8px; /* Rounded corners */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+        cursor: pointer; /* Add pointer cursor on hover */
+    }
+
+    /* Apply hover effect to the blog post header on mobile */
+    .blog-post-holder h3:hover {
+        background-color: #A0522D; /* Darker coffee-related color on hover */
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+}
+
+/* Styles for mobile (screen width up to 768px) */
+@media (max-width: 768px) {
+    /* ... (previous mobile styles) ... */
+
+    /* Ensure that the grid items wrap onto multiple lines on mobile */
+    .grid-offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Adjust the width and spacing of grid items on mobile */
+    .grid-offers .grid__item {
+        width: 50%; /* Set the width to 50% for a half grid on mobile */
+        padding: 10px 15px; /* Add some horizontal spacing between grid items */
+        box-sizing: border-box; /* Ensure padding doesn't affect width */
+    }
+}
+
 
