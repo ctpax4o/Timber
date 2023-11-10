@@ -2625,19 +2625,40 @@ body.template-index .grid__item.large--one-quarter {
 
 /* Styles for mobile devices */
 @media screen and (max-width: 768px) {
-    /* Target the grid container of the special offers */
-    .special-offers-grid {
+    /* Center-align main content container on narrow screens */
+    #PageContainer > main > div {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* Target the individual grid items within the special offers grid */
-    .special-offers-grid .grid__item {
-        width: calc(50% - 10px); /* Adjust width to 50% for two columns, minus some margin */
-        margin: 5px; /* Adjust margin as needed */
-        box-sizing: border-box;
+    /* Image styling for grid items */
+    main.wrapper.main-content .grid__item img {
+        border: 2px solid #cccccc; /* Slightly thinner border for mobile */
+        border-radius: 5px; /* Adjusted for mobile */
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
     }
+
+    /* Header styling */
+    .special-offers-title, .shop-title, .blog-post-title {
+        font-size: 20px; /* Slightly smaller font size for mobile */
+        /* Other styles remain the same */
+    }
+
+    /* Contact page form */
+    .contact-page-form {
+        max-width: 100%; /* Full width on mobile */
+        margin: 10px; /* Adjusted margin for mobile */
+        padding: 15px; /* Adjusted padding for mobile */
+    }
+
+    /* Special Offers Grid - already adjusted for mobile in previous steps */
+
+    /* Add any additional mobile-specific styles here */
 }
+
 
 
