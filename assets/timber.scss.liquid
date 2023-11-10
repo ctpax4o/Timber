@@ -2614,20 +2614,16 @@ main.wrapper.main-content h2 {
   left: 50%; /* Position halfway across the screen */
   top: 50%; /* Position halfway down the screen */
   transform: translate(-50%, -50%); /* Center the form exactly */
-  width: auto; /* Adjust the width as needed */
-  /* Apply additional styles as needed */
+  width: auto; /* Let the form take up the space it needs */
+  max-width: 600px; /* Set a maximum width for the form */
+  width: 80%; /* Make the form take up most of the container, adjust as needed */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Optional: Adds a shadow for better visibility */
 }
 
 
 .grid__item.large--two-thirds.push--large--one-sixth h1 {
   margin-top: 0;
   text-align: center; /* Center the title */
-}
-
-.grid__item.large--two-thirds.push--large--one-sixth .rte,
-.grid__item.large--two-thirds.push--large--one-sixth .form-vertical {
-  width: 100%;
-  /* Apply additional styles as needed */
 }
 
 
