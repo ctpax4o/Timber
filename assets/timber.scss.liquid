@@ -2631,22 +2631,24 @@ body.template-index .grid__item.large--one-quarter {
 
 /* Styles for mobile (screen width up to 768px) */
 @media (max-width: 768px) {
-    /* Adjust the width of grid items for mobile */
-    .grid__item.large--one-third {
-        width: 50%; /* Set the width to 50% for a half grid on mobile */
-        padding: 10px 15px; /* Add some horizontal spacing between grid items */
+    #PageContainer > main > div {
+        display: flex;
+        justify-content: center;
     }
 
-    /* Center-align text within grid items on mobile */
-    .grid__item h6,
-    .grid__item p {
-        text-align: center;
+    #PageContainer > main > div > div.grid__item.large--one-third {
+        width: 50%;
+        padding: 10px 15px;
+        text-align: center; /* Center-align grid items on mobile */
     }
 
-    /* Decrease the font size for h2 headers and center-align them */
-    .grid__item.large--one-third h2 {
+    #PageContainer > main > div > div.grid__item.large--one-third h2 {
         font-size: 16px;
-        text-align: center;
+    }
+
+    #PageContainer > main > div > div.grid__item.large--one-third img {
+        /* Mobile image styles here */
+        /* ... */
     }
 
     /* Center-align the blog post text for mobile */
@@ -2656,22 +2658,22 @@ body.template-index .grid__item.large--one-quarter {
 
     /* Style the blog post text and center-align */
     .blog-post-holder .rte p {
-        font-size: 16px; /* Adjust font size as needed */
-        line-height: 1.4; /* Adjust line height as needed */
-        color: white; /* Text color */
-        text-align: center; /* Center-align paragraphs */
+        font-size: 16px;
+        line-height: 1.4;
+        color: white;
+        text-align: center;
     }
 
     /* Center-align the title of the blog article for mobile */
     .blog-post-holder h3 {
         text-align: center;
-        color: white; /* Text color */
+        color: white;
     }
 
     /* Center-align the date for mobile */
     .blog-post-holder time {
         text-align: center;
-        color: white; /* Text color */
+        color: white;
     }
 }
 
