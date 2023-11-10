@@ -50,7 +50,7 @@
 
 <h2>{{ 'homepage.sections.featured_title' | t }}</h2>
 
-<div class="grid-uniform">
+<div class="grid-uniform shop-grid">          
 
   {% comment %}
     Show five collections, unless it's 'frontpage'.
@@ -70,7 +70,7 @@
       {% unless collection.handle == 'frontpage' %}
         {% assign isEmpty = false %}
         {% assign collection_item_width = 'large--one-fifth medium--one-third' %}
-      <div class="grid-uniform shop-grid {{ collection_item_width }} text-center"> 
+        <div class="grid__item {{ collection_item_width }} text-center">
           {% comment %}
             Use capture to put the collection title in a variable that is used in liquid filters
           {% endcomment %}
