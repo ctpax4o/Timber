@@ -2566,26 +2566,13 @@ body.template-index .grid__item.large--one-quarter {
 {% endif %} // settings.ajax_cart_method
 
 /*=================GV============================*/
-/* Assuming 'nasheto-kafe' is the handle for your collection */
-body.grid__item large--one-third medium--one-half {
-  width: 33.333%; /* Adjusts the width to spread out over the full row, for a 3-column layout */
+.container {
+  display: flex;
+  justify-content: space-between; /* This will distribute space evenly between the items */
+  align-items: center; /* This will align items vertically */
+  flex-wrap: wrap; /* This allows items to wrap onto the next line if needed */
+}
+.item {
+  /* Your individual item styles */
 }
 
-/* For responsive design, you might want to only apply this on larger screens and adjust for smaller ones */
-@media (min-width: 1024px) {
-  body.grid__item large--one-third medium--one-half {
-    width: 33.333%;
-  }
-}
-
-@media (max-width: 1023px) {
-  body.grid__item large--one-third medium--one-half {
-    width: 100%; /* 2-column layout for smaller screens */
-  }
-}
-
-@media (max-width: 767px) {
-  body.grid__item large--one-third medium--one-half {
-    width: 100%; /* 1-column layout for mobile screens */
-  }
-}
