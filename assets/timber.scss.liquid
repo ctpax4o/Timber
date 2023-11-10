@@ -2668,3 +2668,21 @@ body.template-index .grid__item.large--one-quarter {
     }
 }
 
+/* Existing styles for desktop and larger devices remain unchanged */
+
+/* Styles for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Target the grid container of the special offers */
+    .special-offers-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Target the individual grid items within the special offers grid */
+    .special-offers-grid .grid__item {
+        width: calc(50% - 10px); /* Adjust width to 50% for two columns, minus some margin */
+        margin: 5px; /* Adjust margin as needed */
+        box-sizing: border-box;
+    }
+}
