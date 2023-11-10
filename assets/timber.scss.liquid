@@ -2568,7 +2568,7 @@ body.template-index .grid__item.large--one-quarter {
 
 /*=================GV============================*/
 /* Styles for desktop (screen width greater than 768px) */
-@media (min-width: 769px), (max-width: 768px) {
+@media (min-width: 769px) {
     #PageContainer > main > div {
         display: flex;
         justify-content: center;
@@ -2620,6 +2620,28 @@ body.template-index .grid__item.large--one-quarter {
         /* Add any additional styling you want for this form */
     }
 }
+
+/* Styles for mobile (screen width up to 768px) */
+@media (max-width: 768px) {
+    /* Adjust the width of grid items for mobile */
+    .grid__item.large--one-third {
+        width: 50%; /* Set the width to 50% for a half grid on mobile */
+        padding: 10px 15px; /* Add some horizontal spacing between grid items */
+    }
+
+    /* Center-align text within grid items on mobile */
+    .grid__item h6,
+    .grid__item p {
+        text-align: center;
+    }
+
+    /* Decrease the font size for h2 headers and center-align them */
+    .grid__item.large--one-third h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
 
 
 
