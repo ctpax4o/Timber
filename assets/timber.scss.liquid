@@ -2567,7 +2567,6 @@ body.template-index .grid__item.large--one-quarter {
 {% endif %} // settings.ajax_cart_method
 
 /*=================GV============================*/
-/* Styles for desktop (screen width greater than 768px) */
 @media (min-width: 769px) {
     /* Center-align main content container */
     #PageContainer > main > div {
@@ -2596,8 +2595,8 @@ body.template-index .grid__item.large--one-quarter {
         border-color: #4A90E2;
     }
 
-    /* Center-align h2 headers and apply mobile header styling */
-    main.wrapper.main-content h2 {
+    /* Center-align h2 headers and apply styling */
+    .special-offers-title, .shop-title, .blog-post-title {
         text-align: center;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 300;
@@ -2621,18 +2620,18 @@ body.template-index .grid__item.large--one-quarter {
 }
 
 
-/* Styles for devices with a narrow screen aspect ratio */
+
 @media screen and (max-aspect-ratio: 2/3) {
     /* Center-align main content container on narrow screens */
     #PageContainer > main > div,
-    .grid-offers,
-    .blog-post-holder {
+    .special-offers-grid,
+    .blog-post-grid {
         display: flex;
         justify-content: center;
     }
 
     /* Styles for grid items in special offers on narrow screens */
-    .grid-offers .grid__item {
+    .special-offers-grid .grid__item {
         width: calc(50% - 20px);
         margin: 10px;
         box-sizing: border-box;
@@ -2640,7 +2639,7 @@ body.template-index .grid__item.large--one-quarter {
     }
 
     /* Styles for blog post header on narrow screens */
-    .blog-post-holder h3 {
+    .blog-post-title {
         font-size: 24px;
         text-align: center;
         background-color: #8B4513;
@@ -2652,23 +2651,19 @@ body.template-index .grid__item.large--one-quarter {
     }
 
     /* Hover effect for blog post header on narrow screens */
-    .blog-post-holder h3:hover {
+    .blog-post-title:hover {
         background-color: #A0522D;
         transform: scale(1.05);
     }
 
     /* Styles for blog post text and date on narrow screens */
-    .blog-post-holder .rte p,
-    .blog-post-holder time {
+    .blog-post-grid .rte p,
+    .blog-post-grid time {
         font-size: 16px;
         line-height: 1.4;
         color: white;
         text-align: center;
     }
-
-    /* Additional mobile-specific styles can be added here */
 }
-
-/* The rest of your desktop and tablet styles remain unchanged */
 
 
