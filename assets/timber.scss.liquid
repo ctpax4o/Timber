@@ -2621,48 +2621,22 @@ body.template-index .grid__item.large--one-quarter {
 
 
 
-@media screen and (max-width: 768px), screen and (max-aspect-ratio: 3/4) {
-    /* Center-align main content container on narrow screens */
-    #PageContainer > main > div,
-    .special-offers-grid,
-    .blog-post-grid {
+/* Existing styles for desktop and larger devices remain unchanged */
+
+/* Styles for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Target the grid container of the special offers */
+    .special-offers-grid {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
-    /* Styles for grid items in special offers on narrow screens */
+    /* Target the individual grid items within the special offers grid */
     .special-offers-grid .grid__item {
-        width: calc(50% - 20px);
-        margin: 10px;
+        width: calc(50% - 10px); /* Adjust width to 50% for two columns, minus some margin */
+        margin: 5px; /* Adjust margin as needed */
         box-sizing: border-box;
-        text-align: center;
-    }
-
-    /* Styles for blog post header on narrow screens */
-    .blog-post-title {
-        font-size: 24px;
-        text-align: center;
-        background-color: #8B4513;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 8px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        cursor: pointer;
-    }
-
-    /* Hover effect for blog post header on narrow screens */
-    .blog-post-title:hover {
-        background-color: #A0522D;
-        transform: scale(1.05);
-    }
-
-    /* Styles for blog post text and date on narrow screens */
-    .blog-post-grid .rte p,
-    .blog-post-grid time {
-        font-size: 16px;
-        line-height: 1.4;
-        color: white;
-        text-align: center;
     }
 }
 
