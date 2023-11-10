@@ -2621,16 +2621,25 @@ body.template-index .grid__item.large--one-quarter {
     }
 }
 
+
 /* Styles for mobile (screen width up to 768px) */
 @media (max-width: 768px) {
-    /* Define styles for mobile here */
-    /* Use a half grid for mobile special offers */
-    main.wrapper.main-content .grid__item {
+    /* Adjust the width of grid items for mobile */
+    .grid__item.large--one-third {
         width: 50%; /* Set the width to 50% for a half grid on mobile */
-        padding: 0 15px; /* Add some horizontal spacing between grid items */
+    }
+
+    /* Add some horizontal spacing between grid items */
+    .grid__item.large--one-third {
+        padding: 0 15px;
+    }
+
+    /* Center-align text within grid items on mobile */
+    .grid__item h6,
+    .grid__item p {
+        text-align: center;
     }
 }
-
 
 
 
